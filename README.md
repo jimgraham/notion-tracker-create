@@ -51,10 +51,14 @@ Using the "Share" button, add the integration to this page
 ![](docs/invite-1.png)
 ![](docs/invite-2.png)
 
-### Modify the code to add the columns you need
+### Modify the code to add the emoji & columns you need
 
+You can modify the code to
 
-### run
+- [define the start month](https://github.com/jimgraham/notion-tracker-create/blob/main/create_tracker.rb#L5) (it will run to the end of the year)
+- add the [columns you want to track](https://github.com/jimgraham/notion-tracker-create/blob/main/tracker.rb#L10-L16)
+
+### Run
 
 From the command line, run the integration like:
 
@@ -76,5 +80,3 @@ The API is not fully-formed, so some of the things I wanted to do were not avail
 
 1. API columns are alphabetically sorted, so I had to add a prefix (_e.g._ "a Date", "b Exercise"). You will have to edit the columns afterwards to remove these (the order will be preserved)
 2. Can't add the "Calculate" programmatically. One nice feature of having the check list in Notion is that you can add a "Calculate" function to each column. You can add "Percentage checked" and get a percentage of how many days you did the action. This is not available to be set in the API.
-
-
